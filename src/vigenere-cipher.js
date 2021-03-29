@@ -2,12 +2,12 @@ const CustomError = require("../extensions/custom-error");
 
 class VigenereCipheringMachine {
   encrypt() {
-    throw new CustomError('Not implemented');
-    // remove line with error and write your code here
+  
+    if (!message || !key) throw new Error("One or both param is/are UNDEFINED");
   }    
   decrypt() {
     throw new CustomError('Not implemented');
-    // remove line with error and write your code here
+    if (!message || !key) throw new Error("One or both param is/are UNDEFINED");
   }
 }
 
